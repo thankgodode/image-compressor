@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <title>Image Compressor</title>
+  </head>
+  <body>
+    <main>
+      <h1>Image Compressor</h1>
+      <div class="contents">
+        <section class="section1">
+          <h4>Upload Image</h4>
+          <div class="img-content">
+            <div class="image">
+              <div class="loaderWrapper" style="display: none">
+                <span>Loading image...</span>
+              </div>
+            </div>
+            <div class="details">
+              <small style="font-size: 1rem"
+                ><b>Size: <span class="size"></span></b
+              ></small>
+            </div>
+          </div>
+          <div class="settings">
+            <div class="compress" style="display: none">
+              <label for="">Percent</label>
+              <input
+                type="range"
+                value="0"
+                min="0"
+                max="50"
+                id="compressPercent"
+                oninput="this.nextElementSibling.value=this.value"
+              />
+              <output id="percentage">0</output>
+            </div>
+            <input type="file" id="file" accept="image/*" />
+            <button class="select-image">
+              <label class="choose" for="file">
+                <div>Choose image</div>
+              </label>
+            </button>
+            <button class="downloadImage" disabled>Download</button>
+          </div>
+        </section>
+        <!-- <section class="section2">
+          <h4>Download Image</h4>
+          <div class="img-content">
+            <div class="image"></div>
+            <div class="details">
+              <small><b>Size:</b><span></span></small>
+            </div>
+          </div>
+          <button class="save">Download</button>
+        </section> -->
+      </div>
+    </main>
+    <script src="js/new.js"></script>
+  </body>
+</html>

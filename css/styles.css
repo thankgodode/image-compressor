@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+  /* background-color: rgb(251, 255, 255); */
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main h1 {
+  text-align: center;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+section {
+  background-color: azure;
+  margin: 1rem 0;
+  padding: 1.5rem 1.5rem;
+  border-radius: 15px;
+  width: 350px;
+}
+
+.img-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  /* height: 250px; */
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  background: darkslategrey;
+  background-image: url("https://pixsector.com/cache/517d8be6/av5c8336583e291842624.png");
+  border-radius: 15px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.details {
+  font-family: poppins;
+  padding: 0 0 0.2rem 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.settings div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.settings input {
+  margin: 10px 0;
+}
+
+.settings input[type="file"] {
+  display: none;
+}
+
+.settings .choose div {
+  background-color: orange;
+  padding: 1rem 0rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.choose div:hover {
+  background-color: rgb(255, 145, 0);
+}
+
+.select-image {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  background: dodgerblue;
+  color: white;
+  border: none;
+  font-family: Helvetica;
+  font-size: 17px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.percent {
+  width: 300px;
+}
+
+button:hover {
+  background: rgb(58, 58, 255);
+}
+
+h4 {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 770px) {
+
+  .contents{
+    width: 350px;
+  }
+  section{
+    width: 100%;
+  }
+}
+
+/* Canvas */
